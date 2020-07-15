@@ -5,7 +5,7 @@ function memo() {
     const XHR = new XMLHttpRequest();
 
     XHR.open("POST", "/posts", true);
-    XHR.responseType = "json";
+    XHR.responsetype = "json";
     XHR.send(formData);
 
     XHR.onload = () => {
@@ -18,7 +18,7 @@ function memo() {
             投稿日時：${item.created_at}
           </div>
           <div class="post-content">
-          ${item.content}
+          ${item.contnet}
           </div>
         </div>`;
       list.insertAdjacentHTML("afterend", HTML);
